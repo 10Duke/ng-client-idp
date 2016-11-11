@@ -1,0 +1,23 @@
+{
+    "name":         "@10duke/ng-client-api-idp"
+  , "version":      "0.0.1"
+  , "description":  "Angular service for 10Duke IdP REST API."
+  , "main":         "dist/10duke-ng-client-api-idp.js"
+  , "author":       "info@10duke.com"
+  , "license":      "MITNFA"
+  , "bugs": {
+        "url":      "https://king.10duke.com/ClientLibs/Angular/issues"
+    }
+  , "repository": {
+        "type":     "git"
+      , "url":      "git+https://king.10duke.com/ClientLibs/Angular.git"
+    }
+  , "scripts": {
+        "build-docs":   "node build_docs.js"
+      , "docs":         "node node_modules/.bin/http-server docs"
+    }
+  , "devDependencies": {
+        "dgeni-alive":          "^0.3.5"
+      , "http-server":          "^0.9"
+    }
+}
