@@ -520,14 +520,14 @@ function IdpApiProvider ()
       function doRequest (p_method, p_url, p_parameters, p_data)
       {
         var l_url_and_parameters = bindParameters (p_url, p_parameters);
-        return $http[p_method] (
-            l_url_and_parameters.url
-          , {
-                params : l_url_and_parameters.params
-              , headers : headers
-              , p_data : p_data
-            }
-        );
+
+        return $http ({
+            method:     p_method.toUpperCase()
+          , url:        l_url_and_parameters.url
+          , params:     l_url_and_parameters.params
+          , headers:    headers
+          , data:       p_data
+        });
       }
     }; // End of IdpApi
 
